@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- package name must be unique so suffix with "tests" so package loader doesn't ignore us -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.camera2basic.test"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="25" />
+
+<!--     Specifies the instrumentation test runner used to run the tests. -->
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:functionalTest="false"
+        android:handleProfiling="false"
+        android:label="Tests for com.example.android.camera2basic"
+        android:targetPackage="com.example.android.camera2basic" />
+
+    <!-- Min/target SDK versions (<uses-sdk>) managed by build.gradle -->
+    <application>
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+</manifest>
